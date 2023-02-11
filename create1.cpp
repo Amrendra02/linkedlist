@@ -28,12 +28,15 @@ void print(node*head)
 }
 int main()
 {   
-node* node1 = new node(1);
-node* node2 = new node(2);
-node* node3 = new node(3);
-node* node4 = new node(4);
-node* node5 = new node(5);
-node* node6 = new node(6);
+node* node1 = new node(100);
+int n=5;
+   while(n>0)
+   {
+       int c;
+       cin>>c;
+       node* node1 = new node(c);
+       n--;
+   }
 // now the time is to link:-
 //1->2
 node1->next = node2;
